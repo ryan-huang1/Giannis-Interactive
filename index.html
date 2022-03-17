@@ -11,15 +11,74 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    
-    
+
+    <style>
+      body {
+        background: white;
+      }
+
+      .page-head {
+        background: white;
+        box-sizing: border-box;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        width: 375px;
+      }
+
+      /**
+ * Ticker
+ */
+
+      .page-head__ticker {
+        font-family: "Arial";
+        font-size: 11px;
+        font-weight: Bold;
+        height: 36px;
+        line-height: 1;
+        padding: 0 12px;
+        text-transform: uppercase;
+        overflow: hidden;
+      }
+
+      .msg {
+        rmargin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: marquee 6s linear infinite;
+        display: inline-block;
+      }
+
+      span {
+        padding-left: 24px;
+        /* to give a gap between messages */
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(-50%, 0);
+          /* changed from 100% */
+        }
+      }
+    </style>
   </head>
   <body>
+    <header class="page-head">
+      <div class="page-head__ticker ">
+        <p class="msg">
+          <span>Free Shipping on orders over $50</span
+          ><span>And here is the second message</span
+          ><span>Free Shipping on orders over $50</span
+          ><span>And here is the second message</span>
+        </p>
+      </div>
+    </header>
     <h1>Hello, world!</h1>
-    <div class="container-fluid bg-dark text-white">
+    <div class="container-fluid bg-dark text-white"></div>
 
-    </div>
-    
     <h2 class="text-center">sample center heading</h2>
     <!-- Bootstrap JS Bundle with Popper -->
     <script
