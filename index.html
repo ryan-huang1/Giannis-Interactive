@@ -19,19 +19,27 @@
 
       .page-head {
         background: white;
+        box-sizing: border-box;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        width: 375px;
       }
 
+
       /**
- * Ticker
- */
+       * Ticker
+       */
 
       .page-head__ticker {
         font-family: "Arial";
-        font-size: 17px;
+        font-size: 11px;
+        font-weight: Bold;
+        height: 36px;
         line-height: 1;
+        padding: 0 12px;
         text-transform: uppercase;
         overflow: hidden;
-        height: 30px;
       }
 
       .msg {
@@ -41,13 +49,9 @@
         animation: marquee 6s linear infinite;
         display: inline-block;
       }
-      
-      #heading {
-        font-size: 35px;
-      }
 
       span {
-        padding-left: 40px;
+        padding-left: 24px;
         /* to give a gap between messages */
       }
 
@@ -63,21 +67,16 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid">
-      <header class="page-head">
-        <div class="page-head__ticker ">
-          <p class="msg">
-            <span>Made Possible By</span
-            ><span>Polycam</span
-            ><span>Made Possible By</span
-            ><span>Apple Inc.</span>
-            <span>Made Possible By</span
-            ><span>Swift Open Source Team</span>
-            
-          </p>
-        </div>
-      </header>
-    </div>
+    <header class="page-head">
+      <div class="page-head__ticker">
+        <p class="msg">
+          <span>Made Possible By Polycam</span
+          ><span>Made Possible By Polycam</span
+          ><span>Made Possible By Polycam</span
+          ><span>Made Possible By Polycam</span>
+        </p>
+      </div>
+    </header>
     <div class="container-fluid bg-dark text-white"></div>
 
     <h2 class="text-center" id="heading">Huang Family Lineage Book</h2>
