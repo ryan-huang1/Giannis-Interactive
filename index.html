@@ -28,7 +28,6 @@
       .page-head__ticker {
         font-family: "Arial";
         font-size: 17px;
-        font-weight: Bold;
         line-height: 1;
         text-transform: uppercase;
         overflow: hidden;
@@ -42,9 +41,13 @@
         animation: marquee 6s linear infinite;
         display: inline-block;
       }
+      
+      #heading {
+        font-size: 35px;
+      }
 
       span {
-        padding-left: 20px;
+        padding-left: 40px;
         /* to give a gap between messages */
       }
 
@@ -53,7 +56,7 @@
           transform: translate(0, 0);
         }
         100% {
-          transform: translate(-15%, 0);
+          transform: translate(-50%, 0);
           /* changed from 100% */
         }
       }
@@ -70,25 +73,14 @@
             ><span>Apple Inc.</span>
             <span>Made Possible By</span
             ><span>Swift Open Source Team</span>
-            <span>Made Possible By</span
-            ><span>Polycam</span
-            ><span>Made Possible By</span
-            ><span>Apple Inc.</span>
-            <span>Made Possible By</span
-            ><span>Swift Open Source Team</span>
-            <span>Made Possible By</span
-            ><span>Polycam</span
-            ><span>Made Possible By</span
-            ><span>Apple Inc.</span>
-            <span>Made Possible By</span
-            ><span>Swift Open Source Team</span>
+            
           </p>
         </div>
       </header>
     </div>
     <div class="container-fluid bg-dark text-white"></div>
 
-    <h2 class="text-center">Huang Family Lineage Book</h2>
+    <h2 class="text-center" id="heading">Huang Family Lineage Book</h2>
     <!-- Bootstrap JS Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
