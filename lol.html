@@ -23,11 +23,8 @@
         background: white;
       }
       
-      model-viwer {
-        height: 100%;
-      }
-
       #model {
+
       }
 
       .page-head {
@@ -38,6 +35,7 @@
         top: 0;
         width: 600px;
       }
+      
 
       /**
        * Ticker
@@ -100,26 +98,21 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
 
-    <style>
-      model-viewer#reveal {
-        --poster-color: transparent;
-      }
-    </style>
-    <model-viewer
-      ar
-      ar-modes="webxr scene-viewer quick-look"
-      shadow-intensity="1"
-      exposure="1.65"
-      camera-orbit="73.73deg 77.41deg auto"
-      auto-rotate
-      class="w-100"
-      id="reveal"
-      loading="eager"
-      camera-controls
-      poster="https://cdn.glitch.global/da4530e0-8882-4ec4-8c82-2a7302de3fe7/Screen%20Shot%202022-03-21%20at%2012.09.46%20PM.png?v=1647879066758"
-      src="https://cdn.glitch.me/da4530e0-8882-4ec4-8c82-2a7302de3fe7/poly.glb?v=1647872987223"
-      alt="A 3D model of a shishkebab"
-    ></model-viewer>
+
+      <model-viewer
+        src="https://cdn.glitch.me/da4530e0-8882-4ec4-8c82-2a7302de3fe7/poly.glb?v=1647872987223"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        poster="poster.webp"
+        shadow-intensity="1"
+        exposure="1.65"
+        camera-orbit="73.73deg 77.41deg auto"
+        auto-rotate
+        class="w-100 mh-100 p-3"
+        id="model"
+      >
+      </model-viewer>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script
