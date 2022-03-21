@@ -18,7 +18,7 @@
         padding-bottom: 30px;
         font-size: 35px;
       }
-      
+
       body {
         background: white;
       }
@@ -31,7 +31,6 @@
         top: 0;
         width: 600px;
       }
-
 
       /**
        * Ticker
@@ -85,14 +84,32 @@
     <div class="container-fluid bg-dark text-white"></div>
 
     <h2 class="text-center" id="heading">Huang Family Lineage Book</h2>
-    
-<!--     <iframe width="100%" height="500px" frameborder="0" src="https://poly.cam/capture/EF17F979-625E-4670-88E7-10D44E2BA4E7"></iframe> -->
+
+    <!--     <iframe width="100%" height="500px" frameborder="0" src="https://poly.cam/capture/EF17F979-625E-4670-88E7-10D44E2BA4E7"></iframe> -->
     <!-- Bootstrap JS Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <model-viewer
+      bounds="tight"
+      src="https://cdn.glitch.me/da4530e0-8882-4ec4-8c82-2a7302de3fe7/poly.glb?v=1647872987223"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      shadow-intensity="1"
+      exposure="1.65"
+      camera-orbit="73.73deg 77.41deg auto"
+      auto-rotate
+    >
+    </model-viewer>
   </body>
 </html>
-
