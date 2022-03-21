@@ -23,6 +23,9 @@
         background: white;
       }
 
+      #model {
+      }
+
       .page-head {
         background: white;
         box-sizing: border-box;
@@ -93,20 +96,20 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
 
-
-      <model-viewer
-        src="https://cdn.glitch.me/da4530e0-8882-4ec4-8c82-2a7302de3fe7/poly.glb?v=1647872987223"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        camera-controls
-        poster="poster.webp"
-        shadow-intensity="1"
-        exposure="1.65"
-        camera-orbit="73.73deg 77.41deg auto"
-        auto-rotate
-        class="w-100 p-3"
-      >
-      </model-viewer>
+    <style>
+      model-viewer#reveal {
+        --poster-color: transparent;
+      }
+    </style>
+    <model-viewer
+      id="reveal"
+      loading="eager"
+      camera-controls
+      auto-rotate
+      poster="../../assets/poster-shishkebab.png"
+      src="https://cdn.glitch.me/da4530e0-8882-4ec4-8c82-2a7302de3fe7/poly.glb?v=1647872987223"
+      alt="A 3D model of a shishkebab"
+    ></model-viewer>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script
