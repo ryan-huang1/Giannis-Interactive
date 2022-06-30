@@ -3,21 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Huang Lineage Book</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <title>Giannis</title>
 
     <style>
-      #model {
-        background: red;
-        height: 100%;
-      }
-
       html,
       body {
         margin: 0px;
@@ -34,26 +22,29 @@
     ></script>
 
     <style>
-      model-viewer#reveal {
-        --poster-color: transparent;
+      model-viewer {
+        width: 100%;
         height: 100%;
       }
     </style>
     <model-viewer
+      bounds="tight"
+      enable-pan
+      src="https://cdn.glitch.global/f2f5e3c4-2b24-4901-8a3c-d3c94cd4e205/giannis-unprocessed.glb?v=1656552331178"
       ar
       ar-modes="webxr scene-viewer quick-look"
-      shadow-intensity="1"
-      exposure="1.65"
-      camera-orbit="-104.4deg 67.3deg auto"
-      auto-rotate
-      class="w-100"
-      id="reveal"
-      loading="eager"
       camera-controls
-      poster="https://cdn.glitch.global/da4530e0-8882-4ec4-8c82-2a7302de3fe7/Screen%20Shot%202022-03-21%20at%2012.09.46%20PM.png?v=1647879066758"
-      src="https://cdn.glitch.global/da4530e0-8882-4ec4-8c82-2a7302de3fe7/book-crop.glb?v=1647896038384"
-      alt="A 3D model of the Huang Family Lineage Book"
-    ></model-viewer>
+      poster="poster.webp"
+      shadow-intensity="0"
+      camera-orbit="-150.2deg 75.48deg auto"
+      auto-rotate
+      exposure="1.7"
+      shadow-softness="0"
+    >
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+    </model-viewer>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script
