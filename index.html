@@ -10,7 +10,7 @@
       body {
         margin: 0px;
         height: 100%;
-        background: #FFFDF0;
+        background: #fffdf0;
       }
     </style>
   </head>
@@ -27,7 +27,7 @@
         height: 100%;
       }
     </style>
-  
+
     <model-viewer
       bounds="tight"
       enable-pan
@@ -35,18 +35,44 @@
       ar
       ar-modes="webxr scene-viewer quick-look"
       camera-controls
+      environment-image="neutral"
       poster="poster.webp"
-      shadow-intensity="0"
-      camera-orbit="34.65deg 72.59deg auto"
+      shadow-intensity="1"
+      camera-orbit="401deg 61.35deg auto"
       auto-rotate
-      exposure="1.7"
-      shadow-softness="0"
+      exposure="1.23"
     >
+      <button
+        class="Hotspot"
+        slot="hotspot-4"
+        data-position="-0.08799967816523857m -0.3424249013478531m -0.4749586932555323m"
+        data-normal="0.17774481124114638m 0.9760101799925506m -0.12574144355684125m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Intake</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-6"
+        data-position="-0.22605140608422714m 0.156725240105132m 0.07388535355333659m"
+        data-normal="-0.5818686184350004m 0.7292031699698397m 0.3601272660969745m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Climber</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-7"
+        data-position="-0.09416504553933258m -0.02890042810209703m 0.05750450275733554m"
+        data-normal="-0.17268801742482656m 0.2090638600578872m 0.9625337142435995m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Shooter</div>
+      </button>
       <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
       </div>
+      <button slot="ar-button" id="ar-button">View in your space</button>
     </model-viewer>
-    
+
     <!-- End Model -->
     
     
