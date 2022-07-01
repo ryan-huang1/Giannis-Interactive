@@ -6,7 +6,7 @@
     <title>Giannis</title>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;600&display=swap");
 
       html,
       body {
@@ -24,10 +24,19 @@
       #title {
         position: relative;
         left: 60px;
-        top: 35px;
-        font-family: 'Karla', sans-serif;
+        top: 68px;
+        font-family: "Karla", sans-serif;
         font-weight: 600;
         font-size: 23px;
+      }
+
+      #description {
+        position: relative;
+        left: 60px;
+        top: 43px;
+        font-family: "Karla", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
       }
 
       #logo {
@@ -35,11 +44,25 @@
         bottom: 10px;
         left: 0px;
       }
+
+      #divider-line {
+        position: relative;
+        left: 60px;
+        top: 43px;
+      }
     </style>
   </head>
   <body>
     <div id="container">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="80" x2="100" y2="20" stroke="black" />
+
+        <!-- If you do not specify the stroke
+       color the line will not be visible -->
+      </svg>
+
       <p id="title">Eastbots - Giannis</p>
+      <p id="description">2022 Rapid React</p>
       <img
         id="logo"
         src="https://cdn.glitch.global/f2f5e3c4-2b24-4901-8a3c-d3c94cd4e205/eastbots-logo-cutout-crop.png?v=1656692044212"
