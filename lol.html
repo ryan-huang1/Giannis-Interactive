@@ -1,87 +1,37 @@
-<style>
-    @import url("https://fonts.googleapis.com/cssfamily=Karla:400,700");
-    intake-overlay {
-      background-color: #fffdf0;
-      height: 151px;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      overflow-x: hidden;
-      position: relative;
-      width: 389px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giannis</title>
 
-    .hidden,
-    .hidden * {
-      pointer-events: none;
-      visibility: hidden;
-    }
-
-    .mechanism-description-Mdtixd {
-      background-color: transparent;
-      height: 151px;
-      left: 0px;
-      position: relative;
-      top: 0px;
-      width: 391px;
-    }
-
-  .background-KSmE3Y {
-    background-color:
-    #ffffff;
-    border: 1.5px solid var(--black);
-    border-radius: 15px;
-    height: 151px;
-    left: Opx;
-    mix-blend-mode: normal;
-    position: absolute;
-    top: Opx;
-    width: 389px;
-  }
-
-  description-KSmE3Y {
-    background-color: transparent;
-    color: var(--black);
-    font -family: var(--font-family-
-    karla);
-    font-size: var (--font-size-m);
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 11px;
-    letter- spacing: Opx;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: left;
-    top: 53px;
-    width: 219px;
-  }
-</style>
-
-<body>
-  <div class="intake-overlay screen">
-    <div class="mechanism-description-Mdtixd">
-      <div class="background-KSmE3Y"></div>
-      <div class="description-KSmE3Y">
-        The mechanism folds down with a button press using pneumatics.
-        <br />Once the mechanism is folded down two motor spin the rollers to
-        intake the balls.
-      </div>
-      <div class="demo-media-KSmE3Y">
-        <img class="rectangle-2-bxbmMM" src="rectangle-2.png" />
-      </div>
-      <div class="heading-KSmE3Y">
-        <a
-          href="javascript:HideOverlay('intake-overlay',
-'animate-
-disappear');"
-          ><div class="ellipse-1-WhvzGT"></div></a
-        ><img class="line-2-WhvzGT" src="line-2.svg" />
-        <div class="intake-WhvzGT">Intake</div>
-        <div class="highlight-pneumatics-and-motors-WhvzGt">
-          Highlight- pneumatics and motors
-        </div>
-      </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;600&display=swap");
+      
+      .overlay-background {
+        border-radius: 25px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <svg width="400" height="200">
+        <rect
+          id="overlay-background"
+          width="389"
+          height="151"
+          style="fill: rgb(255, 255, 255); stroke-width: 2; stroke: rgb(0, 0, 0)"
+          rx="15"
+        />
+      </svg>
     </div>
-  </div>
-</body>
+
+    <!-- Bootstrap JS Import Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
