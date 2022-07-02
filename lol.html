@@ -6,7 +6,7 @@
     <title>Giannis</title>
 
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;600&display=swap");
 
       #overlay {
         position: fixed;
@@ -16,7 +16,7 @@
         height: 200px;
         background-color: red;
       }
-      
+
       #overlay-title {
         position: absolute;
         left: 43px;
@@ -25,16 +25,25 @@
         font-weight: bold;
         font-size: 36px;
       }
-      
-      #overlay-description {
+
+      #overlay-highlight {
         position: absolute;
-        left: 150px;
+        left: 158px;
         top: 9px;
         font-family: "Karla", sans-serif;
         font-weight: 300;
         font-size: 13px;
       }
       
+      #overlay-description {
+        position: absolute;
+        left: 10px;
+        top: 53px;
+        margin: 0px;
+        font-size: 13px;
+        font-family: "Karla", sans-serif;
+        font-weight: 400;
+      }
     </style>
   </head>
   <body>
@@ -45,8 +54,11 @@
         height="151px"
       />
       <p id="overlay-title">Intake</p>
+      <p id="overlay-highlight">Highlight - pneumatics and motors</p>
       <p id="overlay-description">
-        Highlight - pneumatics and motors
+        Using pneumatics, the mechanism <br> releases and falls when a button is
+        <br> pressed. Once the intake is deployed,<br> two motors spin the rollers,
+        directing <br> balls into the robot.
       </p>
     </div>
   </body>
